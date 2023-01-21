@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">        
+        <title>Formulario de Satisfação</title>
+        <link href="style4.css" rel="stylesheet" type="text/css" /> 
+        
+        <nav>                
+            <button role="button" class="botao">                        
+                <b><a href="https://www.moveissimonetti.com.br/" target="_blank">COMPRAR</a></b>
+                <style>                            
+                    a:link {color: green; text-decoration: none;}
+                    a:visited {color: rgba(5, 5, 5, 0.586); text-decoration: none;}
+                    a:hover {color: rgb(246, 37, 37); text-decoration: none;}
+                    a:active {color: rgba(247, 27, 27, 0.995); text-decoration: none;}
+                </style>
+            </button>
+            <button role="button" class="botao">                        
+                <b><a href="http://blog.moveissimonetti.com.br/" target="_blank">SOBRE</a></b>
+                <style>                            
+                    a:link {color: green; text-decoration: none;}
+                    a:visited {color: rgba(5, 5, 5, 0.586); text-decoration: none;}
+                    a:hover {color: rgb(246, 37, 37); text-decoration: none;}
+                    a:active {color: rgba(247, 27, 27, 0.995); text-decoration: none;}
+                </style>                        
+            </button>  
+    </head>    
+    <body id="corpo">           
+        <h1 id="titulo">Formulario de Satisfação<br> Movéis Simonetti</h1>        
+        <form id="formulario_satisfacao" action="https://api.sheetmonkey.io/form/cAihNkmdgnU68g8YKiuVtf" method="post" class="formulario">
+            <!-- e-mail onde esta sendo enviado o formulario: testeformulariohtml@gmail.com senha: 102030@ABC 
+                esta na aba planilhas com o nome Teste Formulario-->
+            <table>
+                <tr> 
+                    <th colspan="2">Sua opnião e muito importante para nós...<p></p></th>                    
+                </tr>
+                <tr> 
+                    <td><label for="nome">Nome</label></td>
+                    <td><input type="text" name="Nome" id="nome"  placeholder="Apenas letras"/ required size="33"></td>
+                </tr>
+                <tr> 
+                    <td><label for="email">E-mail</label></td>
+                    <td><input type="email" name="E-mail" placeholder="example@example.com"/ size="33" maxlength="1000"></td>
+                </tr>
+                <tr> 
+                    <td><label for="cpf">CPF</label></td>
+                    <td><input type="text" name="CPF" id="campo_cpf" placeholder="Apenas Números"/ required size="33" maxlength="1000"></td>
+                </tr>
+                <tr> 
+                    <td><label for="contato">Contato:</label></td>
+                    <td><input type="text" name="Contato" id="celular" placeholder="Apenas Números" maxlength="11"/ required size="33" maxlength="1000"></td>
+                </tr>
+                <tr>
+                    <td><label for="data">Data Nasc.: </label></td>
+                    <td><input type="date" name="Data Nascimento" id="campo_data"></td>
+                </tr>
+                <tr>
+                    <td><label for="sexo">Sexo:</label></td>
+                    <td><input name="Sexo" type="radio" value="masculino" />Masculino
+                    <input name="Sexo" type="radio" value="feminino" />Feminino</td>
+                </tr>
+                <tr>
+                    <td><label for="estado">Estado:</label></td>
+                            <td><select name="Estado" id="estado">
+                                <option>--</option>
+                                <option>ES</option>
+                                <option>BA</option>                             
+                                <option>MG</option>                                                    
+                            </select><br><br>                 
+                    </td>
+                </tr>                    
+                                        
+                <tr>
+                    <td><label for="comprou">Comprou<br> conosco<br> recentemente? </label></td>                    
+                    <td><select name="Comprou Conosco?" id="comprou">
+                        <option>--</option>
+                        <option>Sim</option>
+                        <option>Não</option>                             
+                        <option>Não lembro</option>                                                    
+                        </select><br><br>
+                    </td>                    
+                </tr> 
+                <tr>                    
+                    <td><br><label for="produtos">Se sim<br> Quais<br> produtos </label></td>                    
+                    <td><select name="Qual Produto" id="produto">
+                        <option>--</option>
+                        <option>Móveis</option>
+                        <option>Eletrodomesticos</option>                             
+                        <option>Eletroportáteis</option>
+                        <option>Outros...</option>                                                    
+                        </select><br><br>
+                    </td>                  
+                    
+                </tr>
+                <tr>
+                    <td><label for="Voltaria"><br>Voltaria<br> a comprar<br> conosco? </label></td>                    
+                    <td><select name="Voltaria a Comprar?" id="voltaria">
+                        <option>--</option>
+                        <option>Sim</option>
+                        <option>Não</option>                             
+                        <option>Talvez</option>                                                    
+                        </select><br><br>
+                    </td>                       
+                </tr>          
+                <tr> 
+                    <td><label for="sugestoes">Deixe-nos<br>suas sugestões</label></td>
+                    <td><textarea name="sugestoes" id="sugestoes" placeholder="Apenas letras" cols="30" rows="7" ></textarea></td>
+                </tr>              
+                <td><button type="submit" class="button">Enviar</button><br>
+            </table> 
+        </form>                 
+    </body>
+    <script src="active.js"></script> 
+</html>
